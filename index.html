@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" href="index.css">
+    <title>e-commerce product page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="nav_bar">
+      <div class="page_links">
+        <img class="menu_icon" src="images/icon-menu.svg" alt="">
+          <img class="logo" src="images/logo.svg" alt="">
+            <div><span> Collections</span></div>
+            <div><span>Men</span></div>
+            <div><span>Women</span></div>
+            <div><span>About</span></div>
+            <div><span> Contact</span></div>
+      </div>
+      <div class="right_side">
+          <div class="cart">
+            <img class="cart_logo" src="images/icon-cart.svg" alt="">
+            <div class="cart_checkout">
+                 <div class="cart_main">
+                        <div class="cart_heading">
+                              Cart
+                        </div>
+                        <hr>
+                        <div class="cart_content">
+                             <div class="empty_cart">Your cart is empty</div>
+                        </div>
+                        <div class="checkout">
+                          
+                        </div>
+                 </div>  
+            </div>
+          </div>
+          <div class="profile_img">
+            <img class="avatar_img" src="images/image-avatar.png" alt="">
+          </div>
+      </div>
+   </div>
+   <hr>
+   <div class="mobile_nav">
+          <div class="mobile_close">
+                <img src="images/icon-close.svg" alt="">
+          </div>
+          <div class="menu_links">
+                <div>
+                  Collections
+                </div>
+                <div>
+                  Men
+                </div>
+                <div>
+                  Women
+                </div>
+                <div>
+                  About
+                </div>
+                <div>
+                  Contact
+                </div>
+          </div>
+   </div>
+   <main class="main_content">
+         <div class="picture_content">
+             <img class="product_img" src="images/image-product-1.jpg" alt="">
+             <div class="thumbnails">
+                    <div>
+                        <img class="thumbnail demo"onclick="currentSlide(1)"  src="images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="thumbnail demo"onclick="currentSlide(2)"src="images/image-product-2-thumbnail.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="thumbnail demo"onclick="currentSlide(3)" src="images/image-product-3-thumbnail.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="thumbnail demo"onclick="currentSlide(4)" src="images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+             </div>   
+             <div class="modal-container">
+              <div class="modal-content">
+               <div class="rules_top">
+                <div><span class="close-button">
+                 &#10005;
+                  </span></div>
+               </div>
+               <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img class="slides_img" src="images/image-product-1.jpg" >
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img class="slides_img"  src="images/image-product-2.jpg" >
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img class="slides_img" src="images/image-product-3.jpg" >
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img class="slides_img" src="images/image-product-4.jpg" >
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+               <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+              </div>
+              
+               <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              <div class="modal_column">
+              <div>
+                <img class="modal_thumbnail cursor" src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div >
+                <img class="modal_thumbnail cursor" src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div>
+                <img class="modal_thumbnail cursor" src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+              <div>
+                <img class="modal_thumbnail cursor" src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+              </div>
+            </div>
+              </div>
+            </div>
+         </div>
+
+         <div class="text_content">
+             <div class="heading">
+                 SNEAKER COMPANY
+             </div>
+            <div class="topic">
+                 Fall Limited Edition Sneakers 
+            </div>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,they withstand anything weather can offer.
+            </p>
+            <div class="price_info">
+              <div class="price">
+                  $125.00
+                  <span class="discount">50%</span>
+                </div>
+                <div class="original_price">$250.00</div>
+            </div>
+           
+            <div class="purchase">
+            <div class="item_count">
+              <button onclick="reduce()">-</button>
+              <div class="starting_number">0</div>
+              <button onclick="increase()">+</button>
+           </div>
+           <div>
+            <button class="add_to_cart">
+              <img src="images/icon-cart.svg" alt="">
+              Add to cart
+            </button>
+           </div>
+          </div>
+         </div>
+   </main>
+   <script src="index.js"></script>
+</body>
+</html>
