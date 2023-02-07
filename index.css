@@ -50,6 +50,7 @@ body{
 .mobile_nav{
   display: flex;
   flex-direction: column;
+  display:none;
   position: fixed;
   top: 0px;
   bottom: 0px;
